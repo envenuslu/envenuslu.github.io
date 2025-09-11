@@ -1,0 +1,221 @@
+
+
+body {
+    background-color: black;
+    color: black;
+    font-family: "tahoma", Sans-serif;
+    padding: 25px;
+    text-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px;
+}
+
+.box {
+    max-width: 450px;
+    margin: auto;
+    background-color: #fff;
+    background-image: url("../images/poop.png");
+    background-repeat: repeat-x;
+    background-position-y: bottom;
+    border-radius: 30px;
+    border: ridge;
+    border-width: 10px;
+    border-color: #ff297e;
+    padding: 30px;
+    text-align: center;
+}
+
+.bigbox {
+    max-width: 950px;
+    margin: auto;
+    background-color: #fff;
+    background-image: url("../images/poop.png");
+    background-repeat: repeat-x;
+    background-position-y: bottom;
+    border-radius: 30px;
+    border: ridge;
+    border-width: 10px;
+    border-color: #ff297e;
+    padding: 30px;
+}
+
+.gradientbutt {
+    color: #fff;
+    background-image: linear-gradient(#ff5c9d, #ff0059, #a8004f);
+    padding: 8px;
+    border-radius: 8px;
+    border: hidden;
+    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.8) 1px 1px 2px);
+}
+
+.gradientbutt:hover {
+    color: #ff9fc5;
+    background-image: linear-gradient(#ff9fc5, #ff5c9d, #ff0059);
+}
+
+.gradientbutt:focus {
+    color: #f2f2f2;
+    background-image: linear-gradient(#a8004f, #ff0059, #ff5c9d);
+    filter: drop-shadow(rgba(0, 0, 0, 0) 1px 1px 2px);
+}
+
+.Sitebutts {
+    color: #fff;
+    background-image: linear-gradient(#ff5c9d, #ff0059, #a8004f);
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: solid;
+    border-width: medium;
+    border-color: #000;
+    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
+}
+
+.Sitebutts:hover {
+    background-image: linear-gradient(#ff9fc5, #ff5c9d, #ff0059);
+}
+
+.Sitebutts:focus {
+    background-image: linear-gradient(#a8004f, #ff0059, #ff5c9d);
+}
+
+a.copyright:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a.copyright:visited {
+    color: #ffffff;
+}
+
+a.copyright:hover {
+    color: #ffffff;
+}
+
+a.copyright:active {
+    color: #ffffff;
+}
+
+a.copyright:focus {
+    color: #f2f2f2;
+}
+
+.logs {
+    color: #fff;
+    background-image: linear-gradient(#ff5c9d, #ff0059, #a8004f);
+    border-radius: 15px;
+    border: hidden;
+    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.8) 1px 1px 2px);
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+hr {
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #000;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    max-height: 600px;
+}
+
+.div1 {
+    grid-area: 1 / 7 / 6 / 12;
+    filter: drop-shadow(rgba(0, 0, 0, 0.8) 1px 1px 2px);
+}
+.div2 {
+    grid-area: 6 / 7 / 8 / 12;
+    filter: drop-shadow(rgba(0, 0, 0, 0.8) 1px 1px 2px);
+}
+.div3 {
+    grid-area: 1 / 1 / 5 / 7;
+    filter: drop-shadow(rgba(0, 0, 0, 0.8) 1px 1px 2px);
+}
+.div4 {
+    grid-area: 5 / 1 / 8 / 7;
+    filter: drop-shadow(rgba(0, 0, 0, 0.8) 1px 1px 2px);
+}
+
+.imagegrid {
+    object-fit: cover;
+    object-position: center;
+}
+
+.sideparent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.side1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.side2 {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropshadow {
+    filter: drop-shadow(rgba(0, 0, 0, 0.4) 1px 1px 2px);
+}
+
+a:link {
+  text-decoration: none;
+  color: #ff0059;
+}
+
+a:visited {
+  color: #ff0059;
+}
+
+a:hover {
+  color: #ff80ac;
+}
+
+a:active {
+  color: #ffffff;
+}
+
+.tumb {
+    border-radius: 20%;
+    filter: drop-shadow(rgba(0, 0, 0, 0.4) 1px 1px 2px);
+    margin: auto;
+    padding: 5px;
+    width: 10%; 
+    min-width: 70px
+}
+
+.mybabys{
+    border-radius: 15px;
+}
+
+.meangreybitch {
+    background-image: linear-gradient(#b3b3b3, #7f7f7f, #3a3a3a);
+    border-radius: 15px;
+    border: hidden;
+    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.8) 1px 1px 2px);
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.meangreybitch code{
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  font-weight: bold
+}
+
+.blodest {
+    text-transform: uppercase;
+    font-weight: bold;
+}
