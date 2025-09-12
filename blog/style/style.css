@@ -1,0 +1,83 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+.caption {
+  margin-top: 0;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #000;
+}
+
+#content {
+  padding: 0% 0% 0% 0%;
+}
+
+
+/*HEADER STYLE*/
+#header {
+ margin: auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}
+#header li {
+  font-size: 1.2em;
+  display: inline-block;
+  margin-right: 1.5em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+#header li a {
+  color: #000;
+  text-decoration: none;
+  background-color: inherit;
+}
+#header a:visited {
+  color: #000;
+}
+
+#header a:hover {
+  color: #ff0059;
+}
+
+#header a:active {
+  color: #ff5c9d;
+}
+
+/*POST LIST STYLE*/
+#postlistdiv ul {
+  font-size: 1.2em;
+  padding: 0;
+  list-style-type: none;
+}
+#recentpostlistdiv ul {
+  font-size: 1.2em;
+  padding: 0;
+  list-style-type: none;
+}
+.moreposts {
+  font-size: 0.8em;
+  margin-top: 0.2em;
+}
+
+/*NEXT AND PREVIOUS LINKS STYLE*/
+#nextprev {
+  text-align: center;
+}
+
+/*DISQUS STYLE*/
+#disqus_thread {
+  margin-top: 1.6em;
+}
+
+/*FOOTER STYLE*/
+#footer {
+  font-size: 0.8em;
+  padding: 0 5% 10px 5%;
+}
