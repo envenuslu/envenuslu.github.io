@@ -12,9 +12,10 @@ body {
     max-width: 450px;
     margin: auto;
     background-color: #fff;
-    background-image: url("../images/poop.png");
+    background-image: url("../Images/poop.png");
     background-repeat: repeat-x;
     background-position-y: bottom;
+    background-size: contain;
     border-radius: 30px;
     border: ridge;
     border-width: 10px;
@@ -30,11 +31,21 @@ body {
     background-image: url("../Images/poop.png");
     background-repeat: repeat-x;
     background-position-y: bottom;
+    background-size: contain;
     border-radius: 30px;
     border: ridge;
     border-width: 10px;
     border-color: #ff297e;
     padding: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .bigbox {
+    padding: 20px;
+    }
+    .box {
+    padding: 15px;
+}
 }
 
 .gradientbutt {
@@ -68,6 +79,26 @@ body {
     border-width: medium;
     border-color: #000;
     text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
+    text-align: center
+}
+
+@media screen and (max-width: 770px) {
+    .Sitebutts {
+    padding: 15px;
+}
+}
+
+.Sitebutts-poo {
+    color: #fff;
+    background-image: linear-gradient(#ff5c9d, #ff0059, #a8004f);
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: solid;
+    border-width: medium;
+    border-color: #000;
+    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
+    font-size: 15px;
 }
 
 .Sitebutts:hover {
@@ -184,12 +215,23 @@ a:active {
 }
 
 .tumb {
-    border-radius: 20%;
+    border-radius: 25%;
     filter: drop-shadow(rgba(0, 0, 0, 0.4) 1px 1px 2px);
     margin: auto;
-    padding: 5px;
-    width: 10%; 
-    min-width: 70px
+    padding: 2px;
+    width: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    .tumb {
+    min-width: 24%;
+}
+}
+
+@media screen and (max-width: 550px) {
+    .tumb {
+    min-width: 45%;
+}
 }
 
 .mybabys{
@@ -218,4 +260,22 @@ h1, h2, h3, h4, h5 {
 .blodest {
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.butt {
+  filter: contrast(100%) brightness(100%);
+}
+
+.butt:hover {
+  animation: flicker 1s step-start infinite;
+  scale: 103%;
+}
+
+@keyframes flicker {
+  50% {
+    filter: contrast(50%) brightness(150%);
+  }
+  0% {
+    filter: contrast(100%) brightness(100%);
+  }
 }
