@@ -49,7 +49,7 @@ body {
     padding: 20px;
     }
     .box {
-    padding: 15px;
+    padding: 20px;
 }
 }
 
@@ -90,6 +90,10 @@ body {
 @media screen and (max-width: 770px) {
     .Sitebutts {
     padding: 15px;
+}
+    #statuscafe {
+    margin-bottom: 15px;
+
 }
 }
 
@@ -282,5 +286,19 @@ h1, h2, h3, h4, h5 {
   }
   0% {
     filter: contrast(100%) brightness(100%);
-  }
+  }    
+}
+    
+#statuscafe {
+    border: hidden;
+    width: 100%;
+    margin-bottom: 15px;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#statuscafe-content {
+    margin: 0%
 }
