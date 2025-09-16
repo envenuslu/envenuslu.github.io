@@ -7,6 +7,11 @@ body {
     padding: 25px;
     text-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px;
 }
+@media screen and (max-width: 500px) {
+    body {
+    padding: 10px;
+}
+}
 
 .box {
     max-width: 450px;
@@ -230,7 +235,7 @@ a:active {
 
 @media screen and (max-width: 550px) {
     .tumb {
-    min-width: 45%;
+    min-width: 32%;
 }
 }
 
