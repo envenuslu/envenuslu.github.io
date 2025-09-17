@@ -146,6 +146,17 @@ a.copyright:focus {
     margin-bottom: 15px;
 }
 
+.logs {
+    color: #fff;
+    background-image: linear-gradient(#ff5c9d, #ff0059, #a8004f);
+    border-radius: 15px;
+    border: hidden;
+    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.8) 1px 1px 2px);
+    width: 100%;
+    margin-bottom: 15px;
+}
+
 hr {
     border-width: 2px;
     border-style: dashed;
