@@ -37,7 +37,26 @@
     <p>The requested web page was not found on this site. Ohhh mannnn...</p>
       <p><button class="gradientbutt" onclick="history.back()">Go Back</button></p>
     </div> <!-- end of div id="content" -->
-    </div> <!-- end of div id="container" -->    
+    </div> <!-- end of div id="container" -->   
+    <button id="backToTop" title="Back to Top">back to top</button>
+
+    <script>
+        const backToTopBtn = document.getElementById("backToTop");
+        window.onscroll = function() {
+            if (window.scrollY > 200) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        backToTopBtn.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+    </script>
     <div class="text-center p-2" alt="Copyright">
             <a href="https://vgen.co/envenuslu" class="icon"><img style="height: 25px" alt="Vgen" src="../Images/VgenIcon.png" /></a>
             <a href="https://ko-fi.com/envenuslu" class="icon"><img style="height: 25px" alt="Ko-Fi" src="../Images/KoFiIcon.svg" /></a>

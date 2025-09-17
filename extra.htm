@@ -119,9 +119,26 @@
         <img src="Images/extranemo.svg" class="mx-auto pt-3"  style="width: 140px; opacity: 40%">
     </div>
     
-    <div id="c_widget"><script src="blog/posts/comments/comment-widget.js"></script><div class="pt-4 text-center blodest">
-                <a href="#top">back to top</a>
-            </div></div>
+    <div id="c_widget"><script src="blog/posts/comments/comment-widget.js"></script></div>
+    <button id="backToTop" title="Back to Top">back to top</button>
+
+    <script>
+        const backToTopBtn = document.getElementById("backToTop");
+        window.onscroll = function() {
+            if (window.scrollY > 200) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        backToTopBtn.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+    </script>
     
     <div class="text-center p-2 poofer" alt="Copyright">
         <a href="https://vgen.co/envenuslu" class="icon"><img style="height: 25px" alt="Vgen" src="Images/VgenIcon.png" /></a>

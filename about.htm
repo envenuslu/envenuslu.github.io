@@ -103,11 +103,26 @@
             <p>You can send me an email me at<a id="contact" href="mailto:envenuslu@email.com"><b> en<!-- you -->venuslu<!-- are a -->@ema<!-- fartface -->il.com</b></a>!</p>
                 <img src="Images/aboutnemo.svg" class="mx-auto"  style="width: 140px; opacity: 40%">
             
-            <div class="pt-4 text-center blodest">
-                <a href="#top">back to top</a>
-            </div>
-            
         </div>
+        <button id="backToTop" title="Back to Top">back to top</button>
+
+    <script>
+        const backToTopBtn = document.getElementById("backToTop");
+        window.onscroll = function() {
+            if (window.scrollY > 200) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        backToTopBtn.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+    </script>
         <div class="text-center p-2" alt="Copyright">
             <a href="https://vgen.co/envenuslu" class="icon"><img style="height: 25px" alt="Vgen" src="Images/VgenIcon.png" /></a>
             <a href="https://ko-fi.com/envenuslu" class="icon"><img style="height: 25px" alt="Ko-Fi" src="Images/KoFiIcon.svg" /></a>

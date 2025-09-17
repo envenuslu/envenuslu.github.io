@@ -190,9 +190,6 @@
         </div>
 
         <div class="text-center pt-2"><img src="Images/worksnemo.svg" class="mx-auto" style="width: 120px; opacity: 40%"></div>
-        <div class="pt-4 d-block d-md-none text-center blodest">
-            <a href="#top">back to top</a>
-        </div>
 
     </div>
     <div class="text-center p-2" alt="Copyright">
@@ -202,6 +199,25 @@
         <a href="https://www.instagram.com/envenuslu/" class="icon"><img style="height: 25px" alt="Instagram" src="Images/InstagramIcon.svg" /></a>
         <a href="https://x.com/envenuslu" class="icon"><img style="height: 25px" alt="Twitter" src="Images/twitterIcon.svg" /></a>
     </div>
+    <button id="backToTop" title="Back to Top">back to top</button>
+
+    <script>
+        const backToTopBtn = document.getElementById("backToTop");
+        window.onscroll = function() {
+            if (window.scrollY > 200) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        backToTopBtn.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+    </script>
 </body>
 
 </html>
