@@ -91,10 +91,6 @@ body {
     .Sitebutts {
     padding: 15px;
 }
-    #statuscafe {
-    margin-bottom: 15px;
-
-}
 }
 
 .Sitebutts-poo {
@@ -292,8 +288,15 @@ h1, h2, h3, h4, h5 {
 #statuscafe {
     border: hidden;
     width: 100%;
+    margin-bottom: 1px;
+}
+
+@media screen and (max-width: 770px) {
+    #statuscafe {
     margin-bottom: 15px;
 }
+}
+
 #statuscafe-username {
     margin-bottom: .5em;
     text-transform: uppercase;
