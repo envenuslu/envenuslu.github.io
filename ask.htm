@@ -33,14 +33,16 @@
         padding: 15px;
         border: none;
         outline: none;
-        filter: drop-shadow(rgba(0, 0, 0, 0.4) 1px 1px 2px);
-        background-color: #fff;
-        background-image: linear-gradient(180deg, #fff 0%, #E4E4F2 100%);
-        background-repeat: repeat-x;
-        background-position-y: bottom;
-        background-size: contain;
         text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px;
-        color: #000;
+        color: #ff0059;
+    }
+
+    #send-message:hover {
+        color: #ff80ac;
+    }
+
+    #send-message:active {
+        color: #ffffff;
     }
 </style>
 </head>
@@ -51,7 +53,7 @@
     
     <div class="box">
         <h5 class="text-center">send me a question anonymously and i will answer it below!</h5>
-        <div class="mb-2"><input id="message-box" type="text" placeholder="Send me a message…"><button id="send-message" type="submit" onclick="onClickSend()">Send</button></div>
+        <div class="mb-2"><input id="message-box" type="text" placeholder="Send me a question…"><span id="send-message" type="submit" onclick="onClickSend()">Send</span></div>
     <span id="message-status"></span>
 
     <script>
