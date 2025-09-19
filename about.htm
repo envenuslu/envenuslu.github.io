@@ -13,6 +13,38 @@
             crossorigin="anonymous" />
         <link rel="stylesheet" href="style/index.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+    #message-box {
+        width: 70%;
+        border-radius: 30px;
+        padding: 15px;
+        border: none;
+        outline: none;
+        filter: drop-shadow(rgba(0, 0, 0, 0.4) 1px 1px 2px);
+        background-color: #fff;
+        background-image: linear-gradient(180deg, #fff 0%, #E4E4F2 100%);
+        background-repeat: repeat-x;
+        background-position-y: bottom;
+        background-size: contain;
+        text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px;
+    }
+
+    #send-message {
+        font-size: 16px;
+        border-radius: 30px;
+        margin-left: 10px;
+        padding: 15px;
+        border: none;
+        outline: none;
+        filter: drop-shadow(rgba(0, 0, 0, 0.4) 1px 1px 2px);
+        background-color: #fff;
+        background-image: linear-gradient(180deg, #fff 0%, #E4E4F2 100%);
+        background-repeat: repeat-x;
+        background-position-y: bottom;
+        background-size: contain;
+        text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px;
+    }
+</style>
     </head>
 
 <body>
@@ -95,8 +127,41 @@
             <hr>
             <script>
             </script>
-            <h5><b>CONTACT ME</b></h5>
-            <p>You can send me an email me at<a id="contact" href="mailto:envenuslu@email.com"><b> en<!-- you -->venuslu<!-- are a -->@ema<!-- fartface -->il.com</b></a>!</p>
+            <h5><b>CONTACT ME!</b></h5>
+            <div id="contact"><p>You can send me an email me at<a href="mailto:envenuslu@email.com"><b> en<!-- you -->venuslu<!-- are a -->@ema<!-- fartface -->il.com</b></a>!</p>
+            <div class="mb-2"><input id="message-box" type="text" placeholder="Type any bug reports here!"><button id="send-message" type="submit" onclick="onClickSend()">Send</button></div>
+    <span id="message-status"></span></div>
+
+    <script>
+        const domMessageBox = document.getElementById("message-box");
+        const domMessageStatus = document.getElementById("message-status");
+        let encryptAndSend = null;
+        async function onClickSend() {
+            const message = domMessageBox.value.trim();
+            if (message == "") {
+                return;
+            }
+            domMessageBox.value = "";
+            domMessageStatus.textContent = "Sending...";
+            let success = false;
+            try {
+                if (!encryptAndSend) {
+                    const frogtab = await import("https://frogtab.com/open/sdk.js");
+                    encryptAndSend = await frogtab.connectToInbox("1d580359-5be7-4c68-9994-b07cdeaf34c0");
+                }
+                success = await encryptAndSend(`Bug Report!: ${message}`);
+            } catch (err) {}
+            if (success) {
+                domMessageStatus.textContent = "Sent!";
+                setTimeout(() => {
+                    domMessageStatus.textContent = "";
+                }, 3000);
+            } else {
+                domMessageBox.value = message;
+                domMessageStatus.textContent = "ERROR";
+            }
+        }
+    </script>
                 <img src="Images/aboutnemo.svg" class="mx-auto"  style="width: 140px; opacity: 40%">
             
         </div>
