@@ -45,6 +45,20 @@ body {
     padding: 30px;
 }
 
+.qa {
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    background-image: linear-gradient(180deg, #fff 0%, #E4E4F2 100%);
+    background-repeat: repeat-x;
+    background-size: contain;
+    border-radius: 15px;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 1px 1px 3px);
+}
+
 @media screen and (max-width: 500px) {
     .bigbox {
     padding: 20px;
