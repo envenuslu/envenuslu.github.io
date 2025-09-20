@@ -357,6 +357,8 @@ h1, h2, h3, h4, h5 {
     background-image: linear-gradient(#ff9fc5, #ff5c9d, #ff0059);
 }
 
-#backToTop:hover {
-  opacity: 1;
+@media screen and (max-width: 700px) {
+    #backToTop:hover {
+        background-image: linear-gradient(#ff5c9d, #ff0059, #a8004f);
+    }
 }
