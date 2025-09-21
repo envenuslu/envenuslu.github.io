@@ -248,7 +248,7 @@ a:active {
 }
 
 .buttonlol:hover {
-    filter: contrast(85%) brightness(150%) drop-shadow(rgba(0, 0, 0, 0.4) 1px 1px 2px);
+    filter: contrast(50%) brightness(150%) drop-shadow(rgba(0, 0, 0, 0.4) 1px 1px 2px);
 }
 
 .tumb {
@@ -257,6 +257,11 @@ a:active {
     margin: auto;
     padding: 2px;
     width: 50px;
+    
+}
+
+.tumb:hover {
+    filter: contrast(50%) brightness(150%) drop-shadow(rgba(0, 0, 0, 0.4) 1px 1px 2px);
 }
 
 @media screen and (max-width: 700px) {
@@ -297,24 +302,6 @@ h1, h2, h3, h4, h5 {
 .blodest {
     text-transform: uppercase;
     font-weight: bold;
-}
-
-.butt {
-  filter: contrast(100%) brightness(100%);
-}
-
-.butt:hover {
-  animation: flicker 1s step-start infinite;
-  scale: 103%;
-}
-
-@keyframes flicker {
-  50% {
-    filter: contrast(50%) brightness(150%);
-  }
-  0% {
-    filter: contrast(100%) brightness(100%);
-  }    
 }
     
 #statuscafe {
