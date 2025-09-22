@@ -1,0 +1,204 @@
+/* General Styling Stuff */
+
+hr {
+    border-width: 3px;
+    border-color: #000;
+}
+
+a {
+    color: #074e6c;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #074e6c;
+}
+
+a:hover {
+    color: #6ef9ff;
+}
+
+a:active {
+    color: #ffffff;
+}
+
+.graButton {
+    color: #000;
+    background: linear-gradient(#dbdbdb, #9b9b9b 50%, #7e7e7e 50%, #9b9b9b);
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid;
+    border-color: #5b5b5b;
+    text-shadow: rgba(0, 0, 0, 0.0) 1px 1px 1px;
+    text-align: center;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 2px);
+    width: fit-content;
+}
+
+.graButton:hover {
+    background: linear-gradient(#ffffff, #dbdbdb 50%, #bababa 50%, #dbdbdb);
+    border-color: #fff;
+    color: #fff;
+}
+
+.graButton:active {
+    background: linear-gradient(#dbdbdb, #9b9b9b 50%, #7e7e7e 50%, #9b9b9b);
+    border-color: #5b5b5b;
+    filter: drop-shadow(rgba(0, 0, 0, 0.0) 2px 2px 2px);
+    color: #000;
+}
+
+
+.flexImage {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.dropShadow {
+    filter: drop-shadow(rgba(0, 0, 0, 0.3) 2px 2px 2px);
+}
+
+
+/* General Styling Stuff End*/
+
+/* UI Styling */
+
+body {
+    background-image: url("");
+    background: linear-gradient(180deg, #ffffff, #797979);
+    background-attachment: fixed;
+    color: #000;
+    font-family: "tahoma", Sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px;
+    font-size: 1pm;
+    padding: 25px;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding: 15px;
+    }
+}
+
+.content {
+    background-image: linear-gradient(180deg, #ffffffe3 0%, #e1e1e1c9 100%);
+    max-width: 700px;
+    margin: auto;
+    padding: 15px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 2px 2px 2px);
+    border: solid;
+    border-color: #5b5b5b;
+}
+
+.siteName {
+    color: #000;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px;
+}
+
+.banner {
+    max-width: 700px;
+    height: 150px;
+    margin: auto;
+    border: solid;
+    border-color: #5b5b5b;
+    border-radius: 5px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 2px);
+}
+
+.navButtons {
+    color: #000;
+    background: linear-gradient(#dbdbdb, #9b9b9b 50%, #7e7e7e 50%, #9b9b9b);
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid;
+    border-color: #5b5b5b;
+    margin: 0% 2.5px;
+    width: 100%;
+    text-shadow: rgba(0, 0, 0, 0.0) 1px 1px 1px;
+    text-align: center;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 2px);
+}
+
+@media screen and (max-width: 750px) {
+    .navButtons {
+        padding: 15px;
+        margin: 2.5px 0%;
+        font-size: 20px;
+        color: #000;
+    }
+}
+
+.navButtons:hover {
+    background: linear-gradient(#ffffff, #dbdbdb 50%, #bababa 50%, #dbdbdb);
+    border-color: #fff;
+    color: #fff;
+}
+
+.navButtons:active {
+    background: linear-gradient(#dbdbdb, #9b9b9b 50%, #7e7e7e 50%, #9b9b9b);
+    border-color: #5b5b5b;
+    filter: drop-shadow(rgba(0, 0, 0, 0.0) 2px 2px 2px);
+    color: #000;
+}
+
+#backToTop {
+    color: #000;
+    background: linear-gradient(#dbdbdb, #9b9b9b 50%, #7e7e7e 50%, #9b9b9b);
+    border: solid;
+    border-color: #5b5b5b;
+    font-size: 20px;
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    padding: 8px 20px;
+    text-shadow: rgba(0, 0, 0, 0.0) 1px 1px 2px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 3px 3px 5px);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#backToTop:hover {
+    background: linear-gradient(#fff, #dbdbdb 50%, #bababa 50%, #dbdbdb);
+    border-color: #fff;
+    color: #fff;
+}
+
+@media screen and (max-width: 750px) {
+    #backToTop:hover {
+        background: linear-gradient(#dbdbdb, #9b9b9b 50%, #7e7e7e 50%, #9b9b9b);
+        border-color: #5b5b5b;
+        color: #000;
+    }
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #0a7daf9b;
+}
+
+::selection {
+    color: #fff;
+    background-color: #0a7daf9b;
+}
+
+/* UI Styling End */
+
+.contentBox {
+    color: #000;
+    background-image: linear-gradient(180deg, #dbdbdb, #9b9b9b, #7e7e7e);
+    padding: 5px 10px;
+    text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 2px);
+    border-radius: 5px;
+    border: solid;
+    border-color: #5b5b5b;
+}
