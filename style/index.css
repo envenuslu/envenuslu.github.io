@@ -254,7 +254,7 @@ a:active {
 .tumb {
     border-radius: 25%;
     filter: drop-shadow(rgba(0, 0, 0, 0.4) 1px 1px 2px);
-    margin: auto;
+    text-align: center;
     padding: 2px;
     width: 50px;
     
@@ -263,7 +263,7 @@ a:active {
 .tumbbig {
     border-radius: 25%;
     filter: drop-shadow(rgba(0, 0, 0, 0.4) 1px 1px 2px);
-    margin: auto;
+    text-align: center;
     padding: 2px;
     width: 125px;
     
