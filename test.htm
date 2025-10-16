@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <title>envenuslu - HOME</title>
+    <meta name="description" content="The place where the art farts!" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/character.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div style="max-width: 425px" class="d-md-block mx-auto">
+        <img style="width: 100%" id="top" alt="envenuslu" src="Images/SkeuomorphicEnvenusP.svg" />
+    </div>
+    <div class="row no-gutters text-center mx-auto pt-2 pb-2" style="max-width: 960px">
+        <button class="Sitebutts card col-md col-12" onclick="window.location.href='home.htm';">HOME</button>
+        <button class="Sitebutts card col-md col-12" onclick="window.location.href='about.htm';">ABOUT</button>
+        <button class="Sitebutts card col-md col-12" onclick="window.location.href='blog/index.html';">BLOG</button>
+        <button class="Sitebutts card col-md col-12" onclick="window.location.href='work.htm';">WORKS</button>
+        <button class="Sitebutts card col-md col-12" onclick="window.location.href='extra.htm';">EXTRAS</button>
+    </div>
+    <div class="bigbox row">
+        <div class="justify-content-between d-flex name g-0">
+            <span>Name</span>
+            <span class="text-secondary">#0001</span>
+        </div>
+        <hr>
+        <div class="col-md-7 col-12 g-0 d-flex flex-column">
+        <div class="infobox mb-3">
+            <div class="row g-0 text-center">
+                <div class="col-6 blodest">Name</div><div class="col-6">Name</div>
+                <div class="col-6 blodest">height</div><div class="col-6">Height</div>
+                <div class="col-6 blodest">Pronouns</div><div class="col-6">Pro/Noun</div>
+                <div class="col-6 blodest">Age</div><div class="col-6">Age</div>
+                <div class="col-6 blodest">Species</div><div class="col-6">Species</div>
+                <div class="col-6 blodest">Made ON</div><div class="col-6">YYYY/MM/DD</div>
+            </div>
+            </div>
+            <div class="infobox" style="overflow-block: auto; max-height: 300px;">
+                Proin lacinia erat eu eros convallis, in luctus enim finibus. Nunc ut dictum quam. Nam aliquam congue purus quis hendrerit. Nam metus sem, finibus a lobortis eu, posuere finibus orci. Donec facilisis sollicitudin arcu quis commodo. Etiam viverra feugiat leo, eget aliquet lacus venenatis ac. Mauris nec purus vel tellus pharetra cursus vitae quis dolor. Phasellus eu ipsum tincidunt, sodales ipsum sit amet, pulvinar lorem. Vestibulum gravida massa a placerat varius. Sed ut molestie tortor. Mauris consequat nulla sed risus rutrum, sit amet porttitor urna aliquam. Integer non risus eu ex scelerisque pellentesque nec non nisi. Donec tortor arcu, sodales in ex sit amet, consequat accumsan orci. Morbi dignissim euismod dolor, ornare tincidunt odio condimentum eu. Integer quam elit, ultrices a accumsan non, pretium vel tellus. Nullam rhoncus
+
+            </div>
+        </div>
+        <div class="g-0 col-md-5 col-12">
+            <img src="Images/Portrait/Nemo.webp" class="w-100 dropshadow p-3">
+        </div>
+    </div>
+    <div class="text-center p-2" alt="Copyright">
+        <a href="https://vgen.co/envenuslu" class="icon"><img style="height: 25px" alt="Vgen" src="Images/VgenIcon.png" /></a>
+        <a href="https://ko-fi.com/envenuslu" class="icon"><img style="height: 25px" alt="Ko-Fi" src="Images/KoFiIcon.svg" /></a>
+        <div class="d-none d-sm-inline"><small><a href="0.htm" class="copyright">&#x2022 2025 &copy; Methonean Government &#x2022</a></small></div>
+        <a href="https://www.instagram.com/envenuslu/" class="icon"><img style="height: 25px" alt="Instagram" src="Images/InstagramIcon.svg" /></a>
+        <a href="https://x.com/envenuslu" class="icon"><img style="height: 25px" alt="Twitter" src="Images/twitterIcon.svg" /></a>
+    </div>
+    
+    <button id="backToTop" title="Back to Top">back to top</button>
+
+    <script>
+        const backToTopBtn = document.getElementById("backToTop");
+        window.onscroll = function() {
+            if (window.scrollY > 200) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        backToTopBtn.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+    </script>
+</body>
+
+</html>

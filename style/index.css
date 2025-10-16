@@ -27,6 +27,7 @@ body {
     border-color: #ff297e;
     padding: 30px;
     text-align: center;
+    box-shadow:inset 2.5px 2.5px 2.5px #0000003b;
 }
 
 .bigbox {
@@ -42,6 +43,7 @@ body {
     border-width: 10px;
     border-color: #ff297e;
     padding: 30px;
+    box-shadow:inset 2.5px 2.5px 2.5px #0000003b;
 }
 
 .qa {
@@ -74,7 +76,8 @@ body {
     border-radius: 8px;
     border: hidden;
     text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
-    filter: drop-shadow(rgba(0, 0, 0, 0.8) 1px 1px 2px);
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 2px);
+    box-shadow:inset 5px 5px 10px #ffffff80, inset -5px -5px 10px #00000080;
 }
 
 .gradientbutt:hover {
@@ -85,6 +88,7 @@ body {
     color: #f2f2f2;
     background-image: linear-gradient(#a8004f, #ff0059, #ff5c9d);
     filter: drop-shadow(rgba(0, 0, 0, 0) 1px 1px 2px);
+    box-shadow:inset 5px 5px 10px #00000080, inset -5px -5px 10px #ffffff80;
 }
 
 .Sitebutts {
@@ -98,7 +102,7 @@ body {
     width: 100%;
     text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
     text-align: center;
-    font-size: 1em;
+    box-shadow:inset 5px 5px 10px #ffffff80, inset -5px -5px 10px #00000080;
 }
 
 @media screen and (max-width: 770px) {
@@ -109,25 +113,13 @@ body {
 }
 }
 
-.Sitebutts-poo {
-    color: #fff;
-    background-image: linear-gradient(#ff5c9d, #ff0059, #a8004f);
-    padding: 15px;
-    font-weight: bold;
-    border-radius: 50px;
-    border: solid;
-    border-width: medium;
-    border-color: #000;
-    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
-    font-size: 15px;
-}
-
 .Sitebutts:hover {
     background-image: linear-gradient(#ff9fc5, #ff5c9d, #ff0059);
 }
 
 .Sitebutts:focus {
     background-image: linear-gradient(#a8004f, #ff0059, #ff5c9d);
+    box-shadow:inset 5px 5px 10px #00000080, inset -5px -5px 10px #ffffff80;
 }
 
 a.copyright:link {
@@ -158,20 +150,10 @@ a.copyright:focus {
     border-radius: 15px;
     border: hidden;
     text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
-    filter: drop-shadow(rgba(0, 0, 0, 0.8) 1px 1px 2px);
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 2px);
     width: 100%;
     margin-bottom: 15px;
-}
-
-.logs {
-    color: #fff;
-    background-image: linear-gradient(#ff5c9d, #ff0059, #a8004f);
-    border-radius: 15px;
-    border: hidden;
-    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
-    filter: drop-shadow(rgba(0, 0, 0, 0.8) 1px 1px 2px);
-    width: 100%;
-    margin-bottom: 15px;
+    box-shadow:inset 5px 5px 10px #ffffff80, inset -5px -5px 10px #00000080;
 }
 
 hr {
@@ -298,9 +280,10 @@ a:active {
     border-radius: 15px;
     border: hidden;
     text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
-    filter: drop-shadow(rgba(0, 0, 0, 0.8) 1px 1px 2px);
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 2px);
     width: 100%;
     margin-bottom: 15px;
+    box-shadow:inset 5px 5px 10px #ffffff80, inset -5px -5px 10px #00000080;
 }
 
 .meangreybitch code{
@@ -353,6 +336,7 @@ h1, h2, h3, h4, h5 {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
+    box-shadow:inset 5px 5px 10px #ffffff80, inset -5px -5px 10px #00000080;
 }
 
 #backToTop:hover {
