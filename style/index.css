@@ -3,7 +3,7 @@ body {
     background-color: black;
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 60%, #151a29 100%);
     background-attachment: fixed;
-    color: black;
+    color: #fff;
     font-family: "tahoma", Sans-serif;
     padding: 25px;
     text-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px;
@@ -28,6 +28,7 @@ body {
     padding: 30px;
     text-align: center;
     box-shadow:inset 2.5px 2.5px 2.5px #0000003b;
+    color: #000;
 }
 
 .bigbox {
@@ -44,6 +45,7 @@ body {
     border-color: #ff297e;
     padding: 30px;
     box-shadow:inset 2.5px 2.5px 2.5px #0000003b;
+    color: #000;
 }
 
 .qa {
@@ -74,7 +76,7 @@ body {
     background-image: linear-gradient(#ff5c9d, #ff0059, #a8004f);
     padding: 8px;
     border-radius: 8px;
-    border: hidden;
+    border: none;
     text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
     filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 2px);
     box-shadow:inset 5px 5px 10px #ffffff80, inset -5px -5px 10px #00000080;
@@ -97,7 +99,7 @@ body {
     padding: 8px;
     font-weight: bold;
     border-radius: 50px;
-    border: hidden;
+    border: none;
     margin: 0% 2.5px;
     width: 100%;
     text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
@@ -148,7 +150,7 @@ a.copyright:focus {
     color: #fff;
     background-image: linear-gradient(#ff5c9d, #ff0059, #a8004f);
     border-radius: 15px;
-    border: hidden;
+    border: none;
     text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
     filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 2px);
     width: 100%;
@@ -292,7 +294,7 @@ a:active {
 
 h1, h2, h3, h4, h5 {
   text-transform: uppercase;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .blodest {
@@ -318,7 +320,7 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
 }
 #statuscafe-content {
-    margin: 0%
+    margin: 0%;
 }
 
 #backToTop {

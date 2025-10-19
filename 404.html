@@ -1,62 +1,151 @@
 <!doctype html>
 
 <html lang="en">
-    <head>
-        <title>envenuslu - 404</title>
-        <meta name="description" content="The place where the art farts!" />
-        <link rel="icon" type="image/x-icon" href="favicon.ico" />
-        <link rel="stylesheet" href="index.css" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-            crossorigin="anonymous" />
-        <link rel="stylesheet" href="style/index.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-      <body>
-    <div style="max-width: 425px" class="d-md-block mx-auto">
-        <img style="width: 100%" alt="envenuslu" src="Images/SkeuomorphicEnvenusP.svg" />
-    </div>
-    <div class="row no-gutters text-center mx-auto p-2" style="max-width: 500px">
-            <button class="Sitebutts-poo card col-sm col-12" onclick="window.location.href='home.htm';">HOME</button>
-            <button class="Sitebutts-poo card col-sm col-12" onclick="window.location.href='about.htm';">ABOUT</button>
-            <button class="Sitebutts-poo card col-sm col-12" onclick="window.location.href='blog/index.html';">BLOG</button>
-            <button class="Sitebutts-poo card col-sm col-12" onclick="window.location.href='work.htm';">WORKS</button>
-            <button class="Sitebutts-poo card col-sm col-12" onclick="window.location.href='extra.htm';">EXTRAS</button>
-        </div>
-    <div class="box"> 
-    <h1>Page Not Found</h1>
-    
-    <p>The requested web page was not found on this site. Ohhh mannnn...</p>
-        <p>If you see this after clicking a link please <a href="about.htm#contact">contact me!</a></p>
-      <div><button class="gradientbutt" onclick="history.back()">Go Back</button></div>
-    </div>
-          <button id="backToTop" title="Back to Top">back to top</button>
 
-    <script>
-        const backToTopBtn = document.getElementById("backToTop");
-        window.onscroll = function() {
-            if (window.scrollY > 200) {
-                backToTopBtn.style.display = "block";
-            } else {
-                backToTopBtn.style.display = "none";
+<head>
+    <title>envenuslu - 404</title>
+    <meta name="description" content="The place where the art farts!" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 1) 60%, #151a29 100%);
+            background-attachment: fixed;
+            color: #fff;
+            font-family: "tahoma", Sans-serif;
+            padding: 25px;
+            text-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px;
+        }
+
+        @media screen and (max-width: 500px) {
+            body {
+                padding: 10px;
             }
-        };
+        }
 
-        backToTopBtn.onclick = function() {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        };
-    </script>
-    <div class="text-center p-2" alt="Copyright">
-            <a href="https://vgen.co/envenuslu" class="icon"><img style="height: 25px" alt="Vgen" src="Images/VgenIcon.png" /></a>
-            <a href="https://ko-fi.com/envenuslu" class="icon"><img style="height: 25px" alt="Ko-Fi" src="Images/KoFiIcon.svg" /></a>
-            <div class="d-none d-sm-inline"><small><a href="0.htm" class="copyright">&#x2022 2025 &copy; Methonean Government &#x2022</a></small></div>
-            <a href="https://www.instagram.com/envenuslu/" class="icon"><img style="height: 25px" alt="Instagram" src="Images/InstagramIcon.svg" /></a>
-            <a href="https://x.com/envenuslu" class="icon"><img style="height: 25px" alt="Twitter" src="Images/twitterIcon.svg" /></a>
+        .gradientbutt {
+            color: #fff;
+            background-image: linear-gradient(#ff5c9d, #ff0059, #a8004f);
+            padding: 8px;
+            border-radius: 8px;
+            border: none;
+            text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
+            filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 2px);
+            box-shadow: inset 5px 5px 10px #ffffff80, inset -5px -5px 10px #00000080;
+        }
+
+        .gradientbutt:hover {
+            background-image: linear-gradient(#ff9fc5, #ff5c9d, #ff0059);
+        }
+
+        .gradientbutt:focus {
+            color: #f2f2f2;
+            background-image: linear-gradient(#a8004f, #ff0059, #ff5c9d);
+            filter: drop-shadow(rgba(0, 0, 0, 0) 1px 1px 2px);
+            box-shadow: inset 5px 5px 10px #00000080, inset -5px -5px 10px #ffffff80;
+        }
+
+        a.copyright:link {
+            text-decoration: none;
+            color: #ffffff;
+            text-shadow: rgba(0, 0, 0, 1) 1px 1px 2px;
+        }
+
+        a.copyright:visited {
+            color: #ffffff;
+        }
+
+        a.copyright:hover {
+            color: #ffffff;
+        }
+
+        a.copyright:active {
+            color: #ffffff;
+        }
+
+        a.copyright:focus {
+            color: #f2f2f2;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: #ff0059;
+        }
+
+        a:visited {
+            color: #ff0059;
+        }
+
+        a:hover {
+            color: #ff80ac;
+        }
+
+        a:active {
+            color: #ffffff;
+        }
+
+
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            color: #fff;
+            background-image: linear-gradient(#ff5c9d, #ff0059, #a8004f);
+            padding: 15px 25px;
+            border-radius: 50px;
+            border: none;
+            text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 2px;
+            filter: drop-shadow(rgba(0, 0, 0, 0.5) 3px 3px 5px);
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: inset 5px 5px 10px #ffffff80, inset -5px -5px 10px #00000080;
+        }
+
+        #backToTop:hover {
+            background-image: linear-gradient(#ff9fc5, #ff5c9d, #ff0059);
+        }
+
+        @media screen and (max-width: 700px) {
+            #backToTop:hover {
+                background-image: linear-gradient(#ff5c9d, #ff0059, #a8004f);
+            }
+        }
+
+        ::-moz-selection {
+            /* Code for Firefox */
+            color: #fff;
+            background: #0004c582;
+        }
+
+        ::selection {
+            color: #fff;
+            background: #0004c582;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="text-center">
+            <h1>Page Not Found</h1>
+
+        <p>The requested web page was not found on this site. Ohhh mannnn...</p>
+        <p>If you see this after clicking a link please <a href="http://www.envenuslu.com/about.htm#contact">contact
+                me!</a></p>
+        <div><button class="gradientbutt" onclick="history.back()">Go Back</button></div>
         </div>
-  </body>
+</body>
+
 </html>
