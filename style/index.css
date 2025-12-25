@@ -124,6 +124,47 @@ body {
     box-shadow:inset 5px 5px 10px #00000080, inset -5px -5px 10px #ffffff80;
 }
 
+a.Sitebutts:link {
+color: white;
+}
+
+a.Sitebutts:visited {
+color: white;
+}
+
+a.Sitebutts:hover {
+color: white;
+}
+
+a.Sitebutts:active {
+    color: #fff;
+}
+
+a.copyright:focus {
+    color: #fff;
+}
+
+a.gradientbutt:link {
+color: white;
+    text-decoration: none;
+}
+
+a.gradientbutt:visited {
+color: white;
+}
+
+a.gradientbutt:hover {
+color: white;
+}
+
+a.gradientbutt:active {
+    color: #fff;
+}
+
+a.gradientbutt:focus {
+    color: #fff;
+}
+
 a.copyright:link {
     text-decoration: none;
     color: #ffffff;

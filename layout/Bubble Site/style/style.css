@@ -1,0 +1,195 @@
+/* General Styling Stuff */
+
+hr {
+    border-width: 3px;
+    border-color: #000;
+}
+
+a {
+    color: #074e6c;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #074e6c;
+}
+
+a:hover {
+    color: #6ef9ff;
+}
+
+a:active {
+    color: #ffffff;
+}
+
+.graButton {
+    color: #000;
+    background: linear-gradient(#dbdbdb, #9b9b9b 50%, #7e7e7e 50%, #9b9b9b);
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid;
+    border-color: #5b5b5b;
+    text-shadow: rgba(0, 0, 0, 0.0) 1px 1px 1px;
+    text-align: center;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 2px);
+    width: fit-content;
+}
+
+.graButton:hover {
+    background: linear-gradient(#ffffff, #dbdbdb 50%, #bababa 50%, #dbdbdb);
+    border-color: #fff;
+    color: #fff;
+}
+
+.graButton:active {
+    background: linear-gradient(#dbdbdb, #9b9b9b 50%, #7e7e7e 50%, #9b9b9b);
+    border-color: #5b5b5b;
+    filter: drop-shadow(rgba(0, 0, 0, 0.0) 2px 2px 2px);
+    color: #000;
+}
+
+
+.flexImage {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.dropShadow {
+    filter: drop-shadow(rgba(0, 0, 0, 0.3) 2px 2px 2px);
+}
+
+
+/* General Styling Stuff End*/
+
+/* UI Styling */
+
+body {
+    background-image: url("");
+    background-color: #fff8eb;
+    background-attachment: fixed;
+    color: #68341c;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.2em;
+    padding: 25px;
+}
+
+
+.fredoka-<uniquifier> {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding: 15px;
+    }
+}
+
+.content {
+    background-color: #fff;
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border: solid;
+    border-color: #68341c;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+    padding: 15px;
+    border-radius: 15px;
+}
+}
+
+.siteName {
+    color: #68341c;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+}
+
+.navButtons {
+    padding: 8px;
+    border-radius: 100%;
+    border: hidden;
+    margin: 0% 2.5px;
+    width: 100%;
+    text-align: center;
+    max-height: 57px;
+}
+
+.navButtons:hover {
+    background:;
+    border-color: #fff;
+    color: #fff;
+}
+
+.navButtons:active {
+    background: linear-gradient(#dbdbdb, #9b9b9b 50%, #7e7e7e 50%, #9b9b9b);
+    border-color: #5b5b5b;
+    filter: drop-shadow(rgba(0, 0, 0, 0.0) 2px 2px 2px);
+    color: #000;
+}
+
+#backToTop {
+    color: #000;
+    background: linear-gradient(#dbdbdb, #9b9b9b 50%, #7e7e7e 50%, #9b9b9b);
+    border: solid;
+    border-color: #5b5b5b;
+    font-size: 20px;
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    padding: 8px 20px;
+    text-shadow: rgba(0, 0, 0, 0.0) 1px 1px 2px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 3px 3px 5px);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#backToTop:hover {
+    background: linear-gradient(#fff, #dbdbdb 50%, #bababa 50%, #dbdbdb);
+    border-color: #fff;
+    color: #fff;
+}
+
+@media screen and (max-width: 750px) {
+    #backToTop:hover {
+        background: linear-gradient(#dbdbdb, #9b9b9b 50%, #7e7e7e 50%, #9b9b9b);
+        border-color: #5b5b5b;
+        color: #000;
+    }
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #0a7daf9b;
+}
+
+::selection {
+    color: #fff;
+    background-color: #0a7daf9b;
+}
+
+/* UI Styling End */
+
+.contentBox {
+    color: #000;
+    background-image: linear-gradient(180deg, #dbdbdb, #9b9b9b, #7e7e7e);
+    padding: 5px 10px;
+    text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 2px);
+    border-radius: 5px;
+    border: solid;
+    border-color: #5b5b5b;
+}
