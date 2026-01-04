@@ -1,3 +1,6 @@
+:root{
+    scrollbar-color: #575d6f #000;
+}
 
 body {
     background-color: black;
@@ -124,6 +127,10 @@ body {
     box-shadow:inset 5px 5px 10px #00000080, inset -5px -5px 10px #ffffff80;
 }
 
+.more-images {
+    display: none;
+}
+
 a.Sitebutts:link {
 color: white;
 }
@@ -198,6 +205,7 @@ a.copyright:focus {
     width: 100%;
     margin-bottom: 15px;
     box-shadow:inset 5px 5px 10px #ffffff80, inset -5px -5px 10px #00000080;
+    scrollbar-color: #ff7cb0 transparent;
 }
 
 hr {
