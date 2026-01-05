@@ -354,23 +354,14 @@ h1, h2, h3, h4, h5 {
     
 #statuscafe {
     border: hidden;
-    width: 100%;
-    margin-bottom: 1px;
-}
-
-@media screen and (max-width: 770px) {
-    #statuscafe {
-    margin-bottom: 15px;
-}
+    margin: 10px 0 0 0;
 }
 
 #statuscafe-username {
-    margin-bottom: .5em;
     text-transform: uppercase;
     font-weight: bold;
 }
 #statuscafe-content {
-    margin: 0%;
 }
 
 #backToTop {
