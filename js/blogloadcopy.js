@@ -12,6 +12,6 @@ function loadComponent(elementId, filePath) {
 
 document.addEventListener("DOMContentLoaded", () => {
     loadComponent('blogimage', '/copy/blogside.html');
-    loadComponent('navbarplaceholder', '/copy/navbar.html');
+    loadComponent('navbarplaceholder', '/copy/blognavbar.html');
     loadComponent('footerplaceholder', '/copy/footer.html');
 });
