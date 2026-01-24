@@ -17,7 +17,7 @@
 */
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-const s_stylePath = 'comment-widget-pink.css';
+const s_stylePath = '/comments/comment-widget.css';
 const s_formId = '1FAIpQLSeDFufmEKAemE7R7B7X43BetVg7D3Y-Jr73EfN-rr48YEcAHA';
 const s_nameId = '692853141';
 const s_websiteId = '523192927';
@@ -51,7 +51,7 @@ const s_filteredWords = [ // Add words to filter by putting them in quotes and s
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
-const s_widgetTitle = 'Leave a comment!';
+const s_widgetTitle = 'Leave a Comment!';
 const s_nameFieldLabel = 'Name';
 const s_websiteFieldLabel = 'Website (Optional)';
 const s_textFieldLabel = '';

@@ -1,0 +1,90 @@
+#c_widget {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#c_form {
+    background-color: --surface-color;
+    padding: 10px;
+    position: relative;
+    text-align: left;
+    border: 1px solid var(--border-color);
+    border-top: 0;
+}
+
+#c_widgetTitle {
+    margin: 0 0 0 0;
+    padding-bottom: 10px
+}
+
+.c-inputWrapper {
+    margin-bottom: 15px;
+}
+
+.c-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.c-input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+    background: #f9f9f9;
+    color: #333;
+    transition: border-color 0.2s;
+    overflow: hidden;
+}
+
+.c-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: #fff;
+}
+
+#c_submitButton {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 5px 5px;
+    display: inline-block;
+}
+
+#c_submitButton:hover {
+    text-decoration: underline;
+}
+
+#c_successMessage {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-top: 0;
+}
+
+
+
+#c_askSummary {
+    padding: 10px 10px;
+    background-color: var(--primary-color);
+    list-style: none;
+    display: block;
+    color: #fff;
+}
+
+#c_askSummary::after {
+    content: " ▼";
+    float: right;
+}
+
+details[open] #c_askSummary::after {
+    content: " ▲";
+}
+
+#c_askSummary::-webkit-details-marker {
+    display: none;
+}

@@ -1,6 +1,60 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+:root {
+  --primary-color: #ff0059;
+  --bg-color: #000;
+  --surface-color: #ffffff;
+  --text-main: black;
+  --text-light: #ffffff;
+  --text-muted: #888;
+  --link-color: #0081ff;
+  --border-color: #ccc;
+  --divider-color: #ccc;
+  scrollbar-color: var(--text-light) var(--primary-color);
+}
+
+#postDate {
+  color: var(--text-muted)
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, Tahoma, sans-serif;
+  margin: 0;
+  background-color: var(--bg-color);
+  padding-top: 88px;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  z-index: 999;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+p, #content li {
+  line-height: 1.6em; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.right { float: right; margin-left: 1em; }
+.left { float: left; margin-right: 1em; }
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .small {
+    max-width: 60%;
+    height: auto;
+  }
+}
 
 .caption {
   margin-top: 0;
@@ -8,24 +62,27 @@
   font-style: italic;
 }
 
-
-h1, h2, h3, h4, h5 {
-  font-family: Tahoma, Geneva, sans-serif;
-  color: #000;
+#container {
+  background-color: var(--surface-color);
+  color: var(--text-main); 
 }
 
 #content {
-  padding: 0% 0% 0% 0%;
+  background-color: var(--surface-color);
+  padding: 15px;
 }
 
-
-/*HEADER STYLE*/
 #header {
- margin: auto;
-  font-weight: bold;
-  text-transform: uppercase;
-  
+  background-color: var(--primary-color);
+  padding: 0 5%;
 }
+
+#header ul {
+  list-style-type: none;
+  padding: 0.5em 0;
+  margin: 0;
+}
+
 #header li {
   font-size: 1.2em;
   display: inline-block;
@@ -33,51 +90,143 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 0.2em;
   margin-top: 0.2em;
 }
+
 #header li a {
-  color: #000;
+  color: var(--text-light);
   text-decoration: none;
   background-color: inherit;
 }
-#header a:visited {
-  color: #000;
+
+#header li a:hover {
+  text-decoration: underline;
 }
 
-#header a:hover {
-  color: #ff0059;
-}
-
-#header a:active {
-  color: #ff5c9d;
-}
-
-/*POST LIST STYLE*/
-#postlistdiv ul {
+#postlistdiv ul, #recentpostlistdiv ul {
   font-size: 1.2em;
   padding: 0;
   list-style-type: none;
 }
-#recentpostlistdiv ul {
-  font-size: 1.2em;
-  padding: 0;
-  list-style-type: none;
-}
+
 .moreposts {
   font-size: 0.8em;
   margin-top: 0.2em;
 }
 
-/*NEXT AND PREVIOUS LINKS STYLE*/
 #nextprev {
   text-align: center;
+  margin-top: 1.4em;
 }
 
-/*DISQUS STYLE*/
 #disqus_thread {
   margin-top: 1.6em;
 }
 
-/*FOOTER STYLE*/
 #footer {
   font-size: 0.8em;
   padding: 0 5% 10px 5%;
+  background-color: var(--surface-color);
+}
+
+#feed-container {
+    margin: 0 auto;
+}
+
+.zonelets-feed-item {
+    background-color: var(--surface-color);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.feed-header small {
+    color: var(--text-muted);
+    display: block;
+    margin-bottom: 15px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover, .nav-link a {
+  text-decoration: underline;
+}
+
+.feed-divider {
+    border: 0;
+    height: 1px;
+    background: var(--divider-color);
+    margin-top: 40px;
+}
+
+#blogsideplaceholder {
+  padding: 10px;
+  background-color: var(--surface-color);
+  color: var(--text-main);
+}
+
+@media screen and (max-width: 768px) {
+    #blogsideplaceholder {
+    outline: solid 1px var(--divider-color);
+}
+}
+
+@media (min-width: 768px) {
+    #blogsideplaceholder {
+        position: sticky;
+        top: 135px;
+        z-index: 998;
+    }
+}
+
+a.copyright:link, a.copyright:visited, a.copyright:hover, a.copyright:active {
+    text-decoration: none;
+    color: var(--text-light);
+    text-shadow: rgba(0, 0, 0, 1) 1px 1px 2px;
+}
+
+
+#statuscafe-username a {
+  color: var(--primary-color);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.qa {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+}
+
+
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    color: #fff;
+    background: #ff0059;
+    padding: 10px 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border: hidden;
+    font-size: 20px;}
+
+#backToTop:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    #backToTop:hover {
+        text-decoration: none;
+    }
+}
+
+.spoiler {
+  border: 1px solid var(--border-color);
+  padding: 5px;
+}
+
+.blog-image {
+  display: block;
+  margin: auto;
 }
