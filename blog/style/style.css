@@ -1,3 +1,4 @@
+/* lalalal i love css lalala care I only really care if it looks good */
 :root {
   --primary-color: #ff0059;
   --bg-color: #000;
@@ -229,4 +230,8 @@ a.copyright:link, a.copyright:visited, a.copyright:hover, a.copyright:active {
 .blog-image {
   display: block;
   margin: auto;
+}
+
+.pixel-image {
+  image-rendering: pixelated;
 }
