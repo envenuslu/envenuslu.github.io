@@ -44,7 +44,7 @@ let postsArray = [
   ["posts/2024-10-03-Raspberry-Cake-Gijinka-silly.html", null, ["art", "raspberry-cake", "raspberry-cake-gijinka", "rock-paper-scissors",]],
   ["posts/2024-10-03-Scissors-Gijinka-Concept.html", null, ["art","scissors", "scissors-gijinka", "rock-paper-scissors",]],
   ["posts/2024-10-02-Kassy’s-Xyolotu.html", null, ["art", "kassy-mable",]],
-  ["posts/2024-10-03-Nemo-On-A-Shikish.html", null, ["art", "neno", "oc-stuff",]], 
+  ["posts/2024-10-03-Nemo-On-A-Shikish.html", null, ["art", "nemo", "oc-stuff",]], 
   ["posts/2024-10-01-Stuff-I-Finished-On-October-1.html", null, ["art", "rock-paper-scissors", "rock", "paper", "scissors", "hatsune-miku", "lolly", "oc-stuff",]],
   ["posts/2024-04-19-Head-koolz.html", null, ["art",]],
   ["posts/2024-04-14-Human-Pencil.html", null, ["art", "pencil-gijinka", "pencil", "rock-paper-scissors",]],
