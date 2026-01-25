@@ -14,6 +14,7 @@ let authorLink = "";
 // POSTS ARRAY
 
 let postsArray = [
+  ["posts/2026-01-24-OC-Icons.html", null, ["art", "oc-stuff", "nemo", "encool", "uncool"]],
   ["posts/2026-01-23-Nemi.html", null, ["art"]],
   ["posts/2026-01-23-I-love-neko.html", null, ["ramble"]],
   ["posts/2025-10-15-Question2.html", null, ["question",]],
