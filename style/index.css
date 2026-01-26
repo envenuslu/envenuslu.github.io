@@ -317,9 +317,15 @@ a:active {
 }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .tumb {
-    min-width: 32%;
+    min-width: 30%;
+}
+}
+
+@media screen and (max-width: 450px) {
+    .tumb {
+    min-width: 45%;
 }
 }
 
@@ -361,8 +367,7 @@ h1, h2, h3, h4, h5 {
     text-transform: uppercase;
     font-weight: bold;
 }
-#statuscafe-content {
-}
+
 
 #backToTop {
     display: none;
@@ -400,4 +405,26 @@ h1, h2, h3, h4, h5 {
 ::selection {
   color: #fff;
   background: #0004c582;
+}
+
+.tooltip-inner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0));
+    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+    box-shadow: rgba(0, 0, 0, 0.41) 2px 2px 5px;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #000;
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #000;
+}
+
+.tooltip.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: #000;
+}
+
+.tooltip.bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: #000;
 }

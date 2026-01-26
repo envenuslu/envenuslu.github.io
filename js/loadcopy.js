@@ -14,3 +14,4 @@ document.addEventListener("DOMContentLoaded", () => {
     loadComponent('navbarplaceholder', '/copy/navbar.html');
     loadComponent('footerplaceholder', '/copy/footer.html');
 });
+
