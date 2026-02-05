@@ -393,17 +393,21 @@ window.addEventListener("load", function () {
 });
 
 const backToTopBtn = document.getElementById("backToTop");
-window.onscroll = function() {
-    if (window.scrollY > 200) {
-        backToTopBtn.style.display = "block";
-    } else {
-        backToTopBtn.style.display = "none";
-    }
-};
 
-backToTopBtn.onclick = function() {
+if (backToTopBtn) {
+  window.onscroll = function () {
+    if (window.scrollY > 200) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+
+  backToTopBtn.onclick = function () {
     window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+      top: 0,
+      behavior: "smooth"
     });
-};
+  };
+}
+
