@@ -14,7 +14,8 @@ let authorLink = "";
 // POSTS ARRAY
 
 let postsArray = [
-  ["posts/2026-03-03-Penny-+-some-sticker-designs.html", null, ["art", "nemo", "art", "oc-stuff", "pokemon", "penny",]],
+  ["posts/2026-03-20-Power.html", null, ["art", "power", "chainsaw-man",]],
+  ["posts/2026-03-03-Penny-+-some-sticker-designs.html", null, ["art", "nemo", "oc-stuff", "pokemon", "penny",]],
   ["posts/2026-02-05-I-need-to-get-experimental-mannnnn.html", null, ["ramble",]],
   ["posts/2026-02-05-Forgot-to-share-this-here.html", null, ["art", "eddsworld", "ambulance", "ambu", "lance",]],
   ["posts/2026-02-05-Easy-Toast-Spread.html", null, ["ramble"]],
